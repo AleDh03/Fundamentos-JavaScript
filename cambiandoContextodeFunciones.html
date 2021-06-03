@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+<script>
+const ale = {
+    nombre: "Alejandro",
+    edad: "Dh"
+}
+
+
+const lia = {
+        nombre: "Lía",
+        edad: "Pequeñita"
+    }
+
+
+function saludar(saludo = "Hello there"){
+console.log(`${saludo}, mi name is ${this.nombre}`)
+}
+
+// const saludarAle = saludar.bind(ale);
+// const saludarLia = saludar.bind(lia);
+
+// setTimeout(saludar.bind(ale, "Como vas Ganador"), 3000);
+saludar.call(ale, ["Que ondas", "como vas?"]);
+
+
+</script>
+
+
+
+
+</body>
+</html>
